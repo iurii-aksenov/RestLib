@@ -18,7 +18,7 @@ namespace SampleServer.Controllers
         [HttpGet]
         public async Task<ActionResult> GetUsersAsync()
         {
-            var response = await _client.GetUsersAsync(string.Empty);
+            var response = await _client.GetUsersAsync();
 
             if (response.HasError)
             {
